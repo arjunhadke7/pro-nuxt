@@ -78,17 +78,10 @@
                         <div>
                             <h1 class="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">Shiv Chatrapati
                                 Enterprise</h1>
-                            <p class="mt-6 text-lg leading-8 text-gray-600 sm:text-center">We are a provider of a wide variety of belts used across various industries. We are a leading
-                                distributor and associated with leading brands from around the world.</p>
+                            <p class="mt-6 text-lg leading-8 text-gray-600 sm:text-center">We are adding more information about our products and services, soon.</p>
+                            <p class="mt-6 text-lg leading-8 text-gray-600 sm:text-center">We are grateful for your patience.</p>
 
-                            <p class="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
-                                We offer a wide range of power transmission, conveyor, and coating belts, all of which
-                                meet globally acknowledged safety parameters. We promise fast delivery, single point
-                                availability, and excellent after-sales support, with a focus on customer satisfaction.
-                            </p>
-                            <p class="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
-                                We are launching soon with a full website with detailed information on what products we offer and all the details. Stay Tuned!
-                            </p>
+                            
                             
                             <p class="mt-8 text-lg leading-8 text-gray-600 sm:text-center">
                                 Stay Tuned!
@@ -99,15 +92,13 @@
                                     Get started
                                 </a> -->
                                 <!-- <span class="text-indigo-200" aria-hidden="true">&rarr;</span> -->
-                                <NuxtLink to="/more"
+                                
+                                <NuxtLink to="/"
                                     class="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                                    Read More
+                                    Back to Home page
                                     <!-- <span class="text-gray-400" aria-hidden="true">&rarr;</span> -->
                                 </NuxtLink>
                             </div>
-                            <AlertNormal>
-                                Hello there, this is an alert from the Nuxt components.
-                            </AlertNormal>
                         </div>
 
                     </div>
@@ -118,12 +109,11 @@
 
 </template>
 
-
-
 <script>
 export default {
+    
     setup() {
-
+        
 
         return {}
     }
