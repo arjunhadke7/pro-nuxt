@@ -2,65 +2,54 @@
 
 <script>
 import axios from 'axios';
+// import { BlogComp } from '~~/.nuxt/components';
 export default {
-    // data() {
-    //     return {
-    //         posts: [],
-    //         error: [],
+  setup() {
+    let posts = ref([])
 
-    //     }
-    // },
-    setup() {
-        let posts = ref([])
-        
-        // let test = reactive([1,2,3,4,5,6])
-        // let i = 0;
+    onMounted(() => {
+      getPost();
+    })
 
-        onMounted(() => {
-            getPost();
+
+    const getPost = async () => {
+      axios.get('https://arjunhadke.in/wp-json/wp/v2/posts')
+        .then(response => {
+          posts.value = response.data;
+          console.log(posts.value)
         })
-
-
-        const getPost = async () => {
-            axios.get('https://arjunhadke.in/wp-json/wp/v2/posts?_embed')
-                .then(response => {
-                    // posts.value = response.data;
-                    posts.value = response.data;
-                    console.log(posts.value)
-                })
-                .catch(error => {
-                    console.log(error);
-                });  
-        }   
-
-
-
-        return {
-            // title, excerpt, content
-             posts, 
-             getPost,
-            // test,
-        }
+        .catch(error => {
+          console.log(error);
+        });
     }
+
+
+
+    return {
+      posts,
+      getPost,
+    }
+  }
 }
 </script>
 
 <style>
 .paras>p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 </style>
 
 <template>
-    <!-- {{ posts }} -->
-    <li v-for="post in posts" :key="post.id">
-        {{ post.title.rendered }}
-        <!-- <div class="mb-10" v-html="post.title"></div> -->
-    </li>
+  <Header />
+  <li v-for="post in posts" :key="post.id">
+    <!-- {{ post.title.rendered }} -->
+    <div class="mb-10" v-html="post.title.rendered"></div>
+    <!-- <BlogComp :hello="post.title.rendered"/> -->
+  </li>
 
 
 
-<section>
+  <!-- <section>
     <div v-for="post in posts" :key="post.title.rendered">
 
     
@@ -78,31 +67,13 @@ export default {
                 <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.</p>
               </a>
             </div>
-            <!-- <div class="flex items-center mt-6">
-              <div class="flex-shrink-0">
-                <a href="https://twitter.com/Mike_Andreuzza">
-                  <span class="sr-only">Michael Andreuzza</span>
-                  <img class="w-10 h-10 rounded-full" src="https://d33wubrfki0l68.cloudfront.net/2f76102fd18a4e095eaed7a836a3f2183a982a4d/91dd4/images/avatar.jpg" alt="">
-                </a>
-              </div>
-              <div class="ml-3">
-                <p class="text-sm font-medium text-neutral-600">
-                  <a href="https://twitter.com/Mike_Andreuzza" class="hover:underline"> Michaerl Andreuzza</a>
-                </p>
-                <div class="flex space-x-1 text-sm text-gray-500">
-                  <time datetime="2020-03-16"> Mar 16, 2020 </time>
-                  <span aria-hidden="true"> · </span>
-                  <span> 6 min read </span>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-</section>
+</section> -->
 
 
 </template>

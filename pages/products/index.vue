@@ -1,12 +1,15 @@
 <template>
     <div>
-        <h1>Products</h1>
+        <!-- <IntroBanner /> -->
     </div>
 </template>
 
 <script>
 export default {
     setup () {
+        definePageMeta({
+            layout: 'landing'
+        })
         
 
         return {}

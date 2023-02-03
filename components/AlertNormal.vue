@@ -10,7 +10,8 @@
           </div>
           <div class="ml-3">
             <div class="text-sm text-blue-600">
-                <p> <slot /> </p>
+                <p class="text-3xl"> <slot name="name" /> </p>
+                <p class="text-sm"> <slot name="info" /> </p>
             </div>
           </div>
         </div>

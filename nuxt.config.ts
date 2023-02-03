@@ -20,6 +20,10 @@ export default defineNuxtConfig({
     //     }
         
     // },
+
+    build: {
+        // loaders
+    }
     
 })
 
