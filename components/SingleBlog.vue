@@ -34,7 +34,9 @@
 
 
 <script setup>
-defineProps(['title', 'name' ])
+// defineProps(['title', 'name' ])
+
+
 
 // defineProps({
 //     t: {
