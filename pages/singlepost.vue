@@ -8,8 +8,8 @@
                     </h1>
                     <div class="flex items-center pt-5 md:pt-10">
                         <div>
-                            <img src="/assets/img/blog-author.jpg"
-                                class="h-20 w-20 rounded-full border-2 border-grey-70 shadow" alt="author image" />
+                            <!-- <img src="/assets/img/blog-author.jpg" -->
+                            <img class="h-20 w-20 rounded-full border-2 border-grey-70 shadow" alt="author image" />
                         </div>
                         <div class="pl-5">
                             <span class="block font-body text-xl font-bold text-grey-10">By Christy Smith</span>
@@ -98,7 +98,7 @@
                 <div
                     class="flex flex-col items-center border-t border-lila py-12 pt-12 md:flex-row md:items-start xl:pb-20">
                     <div class="w-3/4 sm:w-2/5 lg:w-1/4 xl:w-1/5">
-                        <img src="/assets/img/blog-author.jpg" class="rounded-full shadow" alt="author image" />
+                        <img class="rounded-full shadow" alt="author image" />
                     </div>
                     <div class="ml-0 text-center md:ml-10 md:w-5/6 md:text-left">
                         <h3 class="pt-10 font-body text-2xl font-bold text-secondary md:pt-0">

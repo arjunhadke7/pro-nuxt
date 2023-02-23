@@ -7,6 +7,8 @@
     :intro="intro"
     :info="info" 
     />
+
+    <!-- <Coffee /> -->
   </div>
 
 

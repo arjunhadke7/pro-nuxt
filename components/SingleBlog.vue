@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto w-full mb-6">
+    <!-- <div class="container mx-auto w-full mb-6">
         <div class=" overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
             <img class="object-cover w-full h-[30vh]"
                 src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -28,20 +28,25 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <div class="container">
+        <div class="card border-2 rounded-md p-4 m-4">
+            <!-- <h1 class="text-4xl my-2"><slot name="title" /></h1> -->
+            <!-- <p class="text-black"><slot name="excerpt" /></p> -->
+            <!-- <p class="text-gray-400"><slot name="id" /></p> -->
+            <!-- <NuxtLink to="id" class="text-gray-400"> <slot name="id" /> </NuxtLink> -->
+        </div>
     </div>
 </template>
 
 
 
 <script setup>
-// defineProps(['title', 'name' ])
+// let siteurl = ref('https://arjunhadke.in/wp-json/wp/v2/posts' + id)
 
-
-
-// defineProps({
-//     t: {
-//         type: String,
-//         required: true,
-//     }
-// })
+// return {
+//     siteurl,
+//     id
+// }
 </script>
