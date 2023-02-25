@@ -1,31 +1,32 @@
-import { defineNuxtConfig } from 'nuxt/config'
+
 
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    modules: [
-        '@vite-pwa/nuxt',
-        '@nuxtjs/tailwindcss'
-    ],
+    modules: ['@nuxtjs/tailwindcss'],
     
-    
+
     app: {
         head: {
             title: "Nuxt app",
             meta: [
-                
+
                 {
-                    "name": "viewport",
-                    "content": "width=device-width, initial-scale=1, user-scalable=no"
+                    name: "viewport",
+                    content: "width=device-width, initial-scale=1, user-scalable=no"
                 },
                 {
-                    "charset": "utf-8"
+                    charset: "utf-8"
                 }
-            ]
-        }
+            ],
+            
+        },
+        
     },
 
     
+
+
 
     // commented to avoid logging atx to cloud atx host, this is development copy
     // might need local atx at some time in the future but not for now.

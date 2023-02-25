@@ -41,11 +41,11 @@ export default {
 
 <template>
   <Header />
-  <li v-for="post in posts" :key="post.id">
+  <div v-for="post in posts" :key="post.id">
     <!-- {{ post.title.rendered }} -->
     <div class="mb-10" v-html="post.title.rendered"></div>
     <!-- <BlogComp :hello="post.title.rendered"/> -->
-  </li>
+  </div>
 
 
 
