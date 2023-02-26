@@ -3,6 +3,12 @@
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    runtimeConfig: {
+        public: {
+            username: process.env.NUXT_USERNAME,
+            password: process.env.NUXT_PASSWORD,
+        }
+    },
     modules: ['@nuxtjs/tailwindcss'],
     
 
@@ -23,6 +29,8 @@ export default defineNuxtConfig({
         },
         
     },
+
+    
 
     
 
