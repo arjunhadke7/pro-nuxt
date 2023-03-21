@@ -7,6 +7,8 @@ export default defineNuxtConfig({
         public: {
             username: process.env.NUXT_USERNAME,
             password: process.env.NUXT_PASSWORD,
+            url: process.env.NUXT_URL,
+            append: process.env.NUXT_APPEND,
         }
     },
     modules: ['@nuxtjs/tailwindcss'],

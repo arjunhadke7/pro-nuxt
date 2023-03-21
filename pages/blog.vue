@@ -3,9 +3,7 @@
         <div v-for="t in posts">
             <SingleBlog>
                 <template #title><span v-html="t.title.rendered"></span></template>
-                <!-- <template #excerpt><span v-html="t.excerpt.rendered"></span></template> -->
                 <template #excerpt><span v-html="t.excerpt.rendered"></span></template>
-                <template #id><span>{{ t.id }}</span></template>
             </SingleBlog>
         </div>
         
@@ -34,7 +32,7 @@ export default {
           posts.value = response.data;
 
           for(let i = 0; i < posts.value.length; i++) {
-            console.log(posts.value[i].id)
+            // console.log(posts.value[i].id)
           }
         })
         .catch(error => {
