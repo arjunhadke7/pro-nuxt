@@ -4,7 +4,8 @@
             <SingleBlog>
                 <template #title><span v-html="t.title.rendered"></span></template>
                 <template #excerpt><span v-html="t.excerpt.rendered"></span></template>
-            </SingleBlog>
+              </SingleBlog>
+              <NuxtLink :to="`/${t.slug}`">Go to full post</NuxtLink>
         </div>
         
     </div>
