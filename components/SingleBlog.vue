@@ -34,8 +34,8 @@
         <div class="card border-2 rounded-md p-4 m-4">
             <h1 class="text-4xl my-2"><slot name="title" /></h1>
             <p class="text-black"><slot name="excerpt" /></p>
-            <p class="text-gray-400"><slot name="id" /></p>
-            <NuxtLink to="id" class="text-gray-400"> <slot name="id" /> </NuxtLink>
+            <!-- <p class="text-gray-400"><slot name="id" /></p> -->
+            <!-- <NuxtLink to="id" class="text-gray-400">  </NuxtLink> -->
         </div>
     </div>
 </template>

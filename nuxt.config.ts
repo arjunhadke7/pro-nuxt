@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         }
     },
     modules: ['@nuxtjs/tailwindcss'],
-    
+
 
     app: {
         head: {
@@ -27,14 +27,26 @@ export default defineNuxtConfig({
                     charset: "utf-8"
                 }
             ],
-            
+
+            link: [
+              { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.css' },
+              { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.css' },
+            ],
+            script: [
+                {
+                    src: 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js'
+                },
+                {
+                    src: 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js'
+                }
+            ]
         },
-        
+
     },
 
-    
 
-    
+
+
 
 
 

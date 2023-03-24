@@ -24,6 +24,7 @@ export default {
 
         const getSinglePost = () => {
             axios.get(`https://arjunhadke.in/wp-json/wp/v2/posts/`)
+            // axios.get(`http://site.local/wp-json/wp/v2/posts/33?_fields=id,acf,title,content`)
             // below is for woo commerce only
                 // axios.get(`${useRuntimeConfig().url}${useRuntimeConfig().append}/products?_fields=id,description,slug,name`,
                 // {
