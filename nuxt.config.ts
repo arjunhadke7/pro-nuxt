@@ -16,7 +16,7 @@ export default defineNuxtConfig({
 
     app: {
         head: {
-            title: "Nuxt app",
+            title: "Nuxt App",
             meta: [
 
                 {
@@ -29,15 +29,19 @@ export default defineNuxtConfig({
             ],
 
             link: [
-              { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.css' },
-              { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.css' },
+                { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.css' },
+                { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.css' },
             ],
             script: [
                 {
-                    src: 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js'
+                    src: 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js',
+                    body: true,
+                    defer: true
                 },
                 {
-                    src: 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js'
+                    src: 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js',
+                    body: true,
+                    defer: true
                 }
             ]
         },

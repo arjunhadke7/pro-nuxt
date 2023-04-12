@@ -2,6 +2,7 @@
     <div>
         <div v-for="t in posts">
             <SingleBlog>
+                <template #seo><span v-html="t.yoast_meta"></span></template>
                 <template #title><span v-html="t.title.rendered"></span></template>
                 <template #excerpt><span v-html="t.excerpt.rendered"></span></template>
               </SingleBlog>

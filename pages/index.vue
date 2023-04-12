@@ -1,17 +1,10 @@
 <template>
 
   <div>
-
-    <!-- <VitePwaManifest /> -->
-    <!-- <IntroBanner 
-    :name="name" 
-    :intro="intro"
-    :info="info" 
-    /> -->
-    <!-- <Coffee /> -->
-    <h1>Hello
-      
-    </h1>
+    <AlertNormal>
+      <template #name> Mission Success </template>
+      <template #info> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolore doloremque ea, deserunt cum dolor amet vel, nesciunt debitis porro inventore veritatis fugiat consectetur excepturi aperiam magnam quis, eaque possimus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, delectus. </template>
+    </AlertNormal>
   </div>
 
 

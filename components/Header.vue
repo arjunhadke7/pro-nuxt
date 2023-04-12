@@ -6,7 +6,7 @@
 					<div class="flex items-center justify-between">
 						<NuxtLink to="/" class="text-white text-2xl">
 							<!-- <img class="w-auto h-6 sm:h-7" src="https://merakiui.com/images/full-logo.svg" alt=""> -->
-							Shiv Chatrapati Enterprise
+							Arjun's Photo Blog
 						</NuxtLink>
 
 						<!-- Mobile menu button -->
